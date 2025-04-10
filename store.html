@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Store Grid | FreshCart- eCommerce Theme</title>
+    <link rel="icon" href="image/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/image02.svg" alt="Logo" width="120">
+            </a>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <button class="btn btn-success">All Departments</button></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="store.html">Stores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+
+                </ul>
+                <form class="d-flex me-3">
+                    <input class="form-control search-bar" type="search" placeholder="Search for products">
+                    <button class="btn btn-outline-success" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <button type="button" class="btn btn-outline-secondary me-2" data-bs-toggle="modal"
+                    data-bs-target="#locationModal">
+                    <i class="fa-solid fa-location-dot"></i> Location
+                </button>
+
+                <div class="d-flex icon-group">
+                    <button class="icon-btn me-2">
+                        <i class="fa-solid fa-heart"></i><span class="badge">4</span>
+                    </button>
+                    <button class="icon-btn me-2">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <button class="icon-btn">
+                        <i class="fa-solid fa-bag-shopping"></i><span class="badge">5</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Location Modal -->
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="locationModalLabel">Choose your Delivery Location</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Enter your address and we will specify the offer in your area.</p>
+                    <input type="text" class="form-control mb-3" placeholder="Search your area">
+
+                    <h6>Select Location</h6>
+                    <div class="list-group">
+                        <div class="location-item">Alabama <span>Min: $20</span></div>
+                        <div class="location-item">Alaska <span>Min: $30</span></div>
+                        <div class="location-item">Arizona <span>Min: $50</span></div>
+                        <div class="location-item">California <span>Min: $29</span></div>
+                        <div class="location-item">Colorado <span>Min: $80</span></div>
+                        <div class="location-item">Florida <span>Min: $90</span></div>
+                    </div>
+                    <button class="btn btn-outline-secondary mt-3 w-100">Clear All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" class="link-success">Home</a></li>
+                <li class="breadcrumb-item"><a href="store.html" class="link-success">Stores</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Store Grid</li>
+            </ol>
+        </nav>
+        <div class="store-banner">
+            <div>
+                <h2 class="fw-bolder">Stores</h2>
+            </div>
+            <div>
+                <img src="image/images05.svg" alt="Store Illustration">
+            </div>
+        </div> 
+        <p class="mt-3 vendor-text">We have <span class="vendor-count">12</span> vendors now</p>   
+    </div>
+
+
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="store-card">
+                    <img src="image/images06.svg" alt="Store Logo">
+                    <h5>E-Grocery Super Market</h5>
+                    <p>Organic | Groceries | Butcher Shop</p>
+                    <p><span class="delivery-time">Delivery by 20 min</span></p>
+                    <p>Pickup available</p>
+                    <span class="distance-badge">7.5 mi away</span>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="store-card">
+                    <img src="image/images07.svg" alt="Store Logo">
+                    <h5>DealShare Mart</h5>
+                    <p>Alcohol | Groceries</p>
+                    <p><span class="delivery-time">Delivery by 15 min</span></p>
+                    <p>Pickup available</p>
+                    <span class="distance-badge">7.2 mi away</span>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="store-card">
+                    <img src="image/images08.svg" alt="Store Logo">
+                    <h5>DMart</h5>
+                    <p>Groceries | Bakery | Deli</p>
+                    <p><span class="delivery-time">Delivery by 10 min</span></p>
+                    <p>Pickup available</p>
+                    <span class="distance-badge">9.3 mi away</span>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="store-card">
+                    <img src="image/images09.svg" alt="Store Logo">
+                    <h5>Blinkit Store</h5>
+                    <p>Meal Kits | Prepared Meals | Organic</p>
+                    <p><span class="delivery-time">Delivery by 10 min</span></p>
+                    <p>Pickup available</p>
+                    <span class="distance-badge">4.5 mi away</span>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="store-card">
+                    <img src="image/images10.svg" alt="Store Logo">
+                    <h5>BigBasket</h5>
+                    <p>Groceries | Deli</p>
+                    <p><span class="delivery-time">Delivery by 15 min</span></p>
+                    <p>Pickup available</p>
+                    <span class="distance-badge">7.5 mi away</span>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="store-card">
+                    <img src="image/images11.svg" alt="Store Logo">
+                    <h5>Online Grocery Mart</h5>
+                    <p>Groceries | Bakery</p>
+                    <p><span class="delivery-time">Delivery by 12 min</span></p>
+                    <p>Pickup available</p>
+                    <span class="distance-badge">8.1 mi away</span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="store-card">
+                    <img src="image/images12.svg" alt="Store Logo">
+                    <h5>Swiggy Instamart</h5>
+                    <p>Organic | Groceries | Butcher Shop</p>
+                    <p><span class="delivery-time">Delivery by 12 min</span></p>
+                    <p>Pickup available</p>
+                    <span class="distance-badge">7.5 mi away</span>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="store-card">
+                    <img src="image/images13.svg" alt="Store Logo">
+                    <h5>DealShare Mart</h5>
+                    <p>Alcohol | Groceries</p>
+                    <p><span class="delivery-time">Delivery by 10 min</span></p>
+                    <p>Pickup available</p>
+                    <span class="distance-badge">7.2 mi away</span>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="store-card">
+                    <img src="image/images14.svg" alt="Store Logo">
+                    <h5>Spencerst</h5>
+                    <p>Groceries | Bakery | Deli</p>
+                    <p><span class="delivery-time">Delivery by 11 min</span></p>
+                    <p>Pickup available</p>
+                    <span class="distance-badge">9.3 mi away</span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="store-card">
+                    <img src="image/images07.svg" alt="Store Logo">
+                    <h5>DealShare Mart</h5>
+                    <p>Alcohol | Groceries</p>
+                    <p><span class="delivery-time">Delivery by 9 min</span></p>
+                    <p>Pickup available</p>
+                    <span class="distance-badge">7.2 mi away</span>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="store-card">
+                    <img src="image/images08.svg" alt="Store Logo">
+                    <h5>DMart</h5>
+                    <p>Groceries | Bakery | Deli</p>
+                    <p><span class="delivery-time">Delivery by 12 min</span></p>
+                    <p>Pickup available</p>
+                    <span class="distance-badge">9.3 mi away</span>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="store-card">
+                    <img src="image/images09.svg" alt="Store Logo">
+                    <h5>Blinkit Store</h5>
+                    <p>Meal Kits | Prepared Meals | Organic</p>
+                    <p><span class="delivery-time">Delivery by 8 min</span></p>
+                    <p>Pickup available</p>
+                    <span class="distance-badge">4.5 mi away</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-6 col-lg-2">
+                    <h6>Categories</h6>
+                    <ul>
+                        <li><a href="#">Vegetables & Fruits</a></li>
+                        <li><a href="#">Breakfast & Instant Food</a></li>
+                        <li><a href="#">Bakery & Biscuits</a></li>
+                        <li><a href="#">Atta, Rice & Dal</a></li>
+                        <li><a href="#">Sauces & Spreads</a></li>
+                        <li><a href="#">Organic & Gourmet</a></li>
+                        <li><a href="#">Dairy, Bread & Eggs</a></li>
+                        <li><a href="#">Cold Drinks & Juices</a></li>
+                        <li><a href="#">Tea, Coffee & Drinks</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-2">
+                    <h6 class="mt-4"></h6>
+                    <ul>
+                        <li><a href="#">Masala, Oil & More</a></li>
+                        <li><a href="#">Pantry & Spices</a></li>
+                        <li><a href="#">Beverages & Snacks</a></li>
+                        <li><a href="#">Health & Wellness</a></li>
+                        <li><a href="#">Personal Care & Hygiene</a></li>
+                        <li><a href="#">Home & Kitchen</a></li>
+                        <li><a href="#">Baby Care</a></li>
+                        <li><a href="#">Personal Care</a></li>
+                        <li><a href="#">Pet Care</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-6 col-md-6 col-lg-2">
+                    <h6>Get to Know Us</h6>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Our Value</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-2">
+                    <h6>For Consumers</h6>
+                    <ul>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Product Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shop Checkout</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-2">
+                    <h6>Become a Shopper</h6>
+                    <ul>
+                        <li><a href="#">Shopper Opportunities</a></li>
+                        <li><a href="#">Become a Shopper</a></li>
+                        <li><a href="#">Earnings</a></li>
+                        <li><a href="#">Ideas & Guides</a></li>
+                        <li><a href="#">New Retailers</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-2">
+                    <h6>Freshcart programs</h6>
+                    <ul>
+                        <li><a href="#">Freshcart programs</a></li>
+                        <li><a href="#"> Gift Cards</a></li>
+                        <li><a href="#"> Promos & Coupons</a></li>
+                        <li><a href="#"> Freshcart Ads</a></li>
+                        <li><a href="#"> Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+            <hr>
+
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-md-6 d-flex align-items-center gap-3 flex-wrap">
+                    <h6 class="mb-0">Payment Partners</h6>
+                    <div class="payment-icons d-flex gap-2 flex-md-nowrap flex-wrap">
+                        <img src="image/image34.svg" alt="Amazon Pay" class="icon">
+                        <img src="image/image35.svg" alt="American Express" class="icon">
+                        <img src="image/image36.svg" alt="Mastercard" class="icon">
+                        <img src="image/image37.svg" alt="PayPal" class="icon">
+                        <img src="image/image38.svg" alt="Visa" class="icon">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 d-flex justify-content-md-end align-items-center gap-3 flex-wrap">
+                    <h6 class="mb-0">Get Deliveries with FreshCart</h6>
+                    <div class="app-buttons d-flex gap-2 flex-md-nowrap flex-wrap">
+                        <a href="#"><img src="image/image39.svg" alt="Google Play" class="icon"></a>
+                        <a href="#"><img src="image/image40.svg" alt="App Store" class="icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
